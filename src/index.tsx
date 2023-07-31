@@ -1,7 +1,7 @@
 import React from 'react';
 import fitty from 'fitty';
 
-const fullWidth = { width: '100%' };
+const fullWidth = { width: '100%', lineHeight: '100%' };
 
 // todo support style and className on Wrapper(root div) and Ref div
 // one solution could be adding style prop for root and another styleProp to ref
