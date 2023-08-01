@@ -1,7 +1,7 @@
 import React from 'react';
 import fitty from 'fitty';
 
-const fullWidth = { width: '100%', lineHeight: '100%', height: '100%', display: 'flex' };
+const fullWidth = { width: '100%' };
 
 // todo support style and className on Wrapper(root div) and Ref div
 // one solution could be adding style prop for root and another styleProp to ref
@@ -43,7 +43,7 @@ export const ReactFitty = React.forwardRef<
         // maybe that needed to be handled in fitty?
         setTimeout(() => {
             fitInstance.fit();
-        }, 0);
+        }, 1000);
 
         return () => {
             fitty(effectRef.current!).unsubscribe();
