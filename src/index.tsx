@@ -43,7 +43,7 @@ export const ReactFitty = React.forwardRef<
         // maybe that needed to be handled in fitty?
         setTimeout(() => {
             fitInstance.fit();
-        }, 1000);
+        }, 0);
 
         return () => {
             fitty(effectRef.current!).unsubscribe();
